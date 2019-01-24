@@ -24,3 +24,8 @@ function convertToRoman(num) {
   
     return str;
   }
+
+  function check(){
+    var value = document.getElementById("input").value;
+    document.getElementById("p").innerHTML=convertToRoman(value);
+}
