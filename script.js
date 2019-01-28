@@ -24,8 +24,13 @@ function convertToRoman(num) {
   
     return str;
   }
-
+const input = document.getElementById("input");
   function check(){
-    var value = document.getElementById("input").value;
+    var value = input.value;
     document.getElementById("p").innerHTML=convertToRoman(value);
 }
+  input.addEventListener("keypress", function(x){
+  if (x.keyCode === 13){
+      check();
+  }
+  });
